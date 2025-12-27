@@ -482,12 +482,46 @@ section.homeBanner:after {
         opacity: 1;
         top: 0;
     }
+
+    .homeBanner {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .btnPrimary {
+        font-size: 14px;
+    }
+
+    .homeBanner .btnPrimary {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .navbar-brand img, .siteLogo {
+        width: 150px;
+    }
+
+    .siteFooter {
+        padding: 40px 0 20px;
+    }
+
+    .siteFooter .footerTitle {
+        font-size: 16px;
+    }
+
+    .siteFooter .footerLinks li a, .siteFooter p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 991.98px) {
    .offcanvas {
         width: 300px !important;
         height: 100vh;
+   }
+
+   .homeBanner .sectionTitle {
+        font-size: 30px;
    }
 
    .sectionTitle {
@@ -502,6 +536,18 @@ section.homeBanner:after {
 @media (max-width: 767.98px) {
     .statsSection .row div:nth-child(even) div {
         border-right: none !important;
+    }
+
+    .listColumns {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .navbar-brand img, .siteLogo {
+        width: 140px;
+    }
+
+    .sectionPadding {
+        padding-block: 40px;
     }
 }
 
