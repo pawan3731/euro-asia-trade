@@ -362,13 +362,13 @@ section.homeBanner:after {
     margin-bottom: 6px;
 }  
 
-.formGroup .form-control {
+.formGroup .form-control, .formGroup .form-select {
     height: 42px;
     font-size: 14px;
     border-color: var(--borderColor);
 }
 
-.formGroup .form-control:focus {
+.formGroup .form-control:focus, .formGroup .form-select:focus {
     box-shadow: none;
     border-color: var(--primaryColor);
 }
@@ -505,12 +505,16 @@ section.homeBanner:after {
         padding: 40px 0 20px;
     }
 
-    .siteFooter .footerTitle {
+    .siteFooter .footerTitle, .adderssDetails .adderssCol h5 {
         font-size: 16px;
     }
 
-    .siteFooter .footerLinks li a, .siteFooter p {
+    .siteFooter .footerLinks li a, .siteFooter p, .adderssDetails .adderssCol p {
         font-size: 14px;
+    }
+
+    .breadcrumb-item {
+        font-size: 24px;
     }
 }
 
